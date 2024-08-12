@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ApiService from './ApiService';
 import QuestionForm from './QuestionForm';
 import DeleteButton from './DeleteButton';
-
+// This page lists out all of my questions and allows me to start editing them if I need to
 const EditQuestionsPage = () => {
   const [questions, setQuestions] = useState([]);
   const [showForm, setShowForm] = useState(false);

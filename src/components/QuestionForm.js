@@ -1,3 +1,4 @@
+// This is a form which is a modal so we can edit the EditQuestionsPage. or add to them
 import React, { useState, useEffect } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import DeleteButton from './DeleteButton';
@@ -42,7 +43,7 @@ const QuestionForm = ({ show, handleClose, onSave, questionToEdit }) => {
     }
   };
   
-
+// This was a tricky one which gave me the hardest problems it decides what to do if it is a new quesiton or a old one being edited
   const handleSubmit = () => {
     const newQuestion = { question, options, correctAnswer,brainPart };
     // console.log('updated data',newQuestion)
